@@ -1,0 +1,10 @@
+<h3>Add a New Blog Form</h3>
+<%= form_with model: @blog do |form| %>
+ <%= form.text_field :title %>
+  <br/><br/>
+  <%= form.text_area :content %>
+  <br/><br/>
+  <%= form.submit %>
+<% end %>
+
+<%= link_to 'button to homepage', blogs_path %>
