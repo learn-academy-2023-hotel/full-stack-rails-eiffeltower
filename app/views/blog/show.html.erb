@@ -2,3 +2,5 @@
 <p><%= @blog.content %></p>
 
 <%= link_to 'button to homepage', blogs_path %>
+<br/><br/>
+<%= button_to 'Remove Blog', delete_blog_path, method: 'delete' %>
